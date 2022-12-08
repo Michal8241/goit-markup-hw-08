@@ -1,0 +1,26 @@
+.contact-links-footer {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &>.contact-links-footer__element {
+        padding-top: 30px;
+        margin: 0;
+        padding: 0;
+
+        &>.contact-links-footer__element--adress {
+            line-height: 30px;
+            color: $main-silver;
+            text-decoration: none;
+            
+        }
+    }
+}
+
+@media (min-width: $break-point-min) and (max-width: $break-point-tel) {
+    .contact-links-footer {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}

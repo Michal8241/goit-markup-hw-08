@@ -1,0 +1,12 @@
+.is-hidden, .hide {
+    display: none;
+    visibility: hidden;
+    z-index: 100;
+}
+
+@media (min-width: $break-point-tel)  {
+    .hide {
+        visibility: visible;
+        display: block;
+    }
+}

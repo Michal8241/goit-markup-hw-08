@@ -1,0 +1,28 @@
+.pop-window-inpt-svg {
+    position: relative;
+    width: 100%;
+    transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:has(input:focus) {
+        fill: $main-blue;
+    }
+
+    &>.pop-window-inpt-svg__svg {
+        position: absolute;
+        top: 10px;
+        left: 13px;
+    }
+    &>.pop-window-inpt-svg__input {
+        padding: 8px 8px 8px 42px;
+        border: 1px solid $border-input;
+        border-radius: 4px;
+        transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        width: 100%;
+
+        &:focus{
+            outline: 0;
+            border-color: $main-blue;
+            fill: $main-blue;   
+        }
+    }
+}

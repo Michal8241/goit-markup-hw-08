@@ -1,0 +1,25 @@
+.name {
+
+    background-color: $main-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 148px;
+    flex-direction: column;
+
+
+    &>.name__industry {
+        display: block;
+        font-size: 16px;
+        line-height: 16px;
+        color: $main-silver;
+    }
+    &>.name__person {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 0.85em;
+        color: $black-main;
+        padding: 10px;
+    }
+
+}

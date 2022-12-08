@@ -1,0 +1,26 @@
+.icon-team {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &>.icon-team__link {
+        padding: 10px;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: $main-silver;
+        transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                    fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            background-color: $main-blue;
+            fill: $main-white;
+        }
+    }
+}

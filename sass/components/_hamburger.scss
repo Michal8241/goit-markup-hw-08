@@ -1,0 +1,32 @@
+.navigation__hamburger {
+    z-index: 110;
+    display: none;
+
+    .navigation__hamburger--div1, .navigation__hamburger--div2, .navigation__hamburger--div3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change {
+        .navigation__hamburger--div1 {
+            transform: translate(0, 11px) rotate(-45deg);
+        }
+        .navigation__hamburger--div2 {
+            opacity: 0;
+        }
+        .navigation__hamburger--div3 {
+            transform: translate(0, -11px) rotate(45deg);
+        }
+    }
+}
+
+
+
+@media (min-width: $break-point-min) and (max-width: $break-point-tel) {
+    .navigation__hamburger {
+        display: block;
+    }
+}

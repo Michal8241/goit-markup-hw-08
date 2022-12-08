@@ -1,0 +1,74 @@
+.contact-links {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    fill: $main-silver;
+
+    &>.contact-links__element {
+        &>.contact-links__element__link {
+            font-size: 14px;
+            color: $main-silver;
+            &:hover {
+                color: $main-blue;
+                fill: $main-blue;
+                transition: fill 1s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            &:focus {
+                color: $main-blue;
+                fill: $main-blue;
+                transition: fill 1s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+    }
+
+}
+
+@media (min-width: $break-point-min) and (max-width: $break-point-tel) {
+    .contact-links {
+        position: absolute;
+        top: 35vh;
+        left: 0;
+        height: 50vh;
+        width: 100vw;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        background-color: $main-white;
+        padding-top: 40vh;
+        padding-left: 30px;
+        box-sizing: border-box;
+        z-index: 100;
+
+        &>.contact-links__element {
+            font-weight: bold;
+
+            &>.contact-links__element__link {
+                &>svg {
+                    display: none;
+                }
+            }
+
+            &:nth-child(2) {
+                &>.contact-links__element__link {
+                    color: $main-blue;
+                    font-size: 30px;
+                }
+            }
+
+            &:nth-child(1) {
+                &>.contact-links__element__link {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $break-point-tel) and (max-width: $break-point-tablet) {
+    .contact-links {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}

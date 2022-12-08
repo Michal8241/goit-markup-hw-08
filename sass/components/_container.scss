@@ -1,0 +1,14 @@
+.container {
+    box-sizing: border-box;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: $break-point-min) and (max-width: $break-point-tablet) {
+    .container {
+        width: 100vw;
+        padding: 0;
+    }
+}
+

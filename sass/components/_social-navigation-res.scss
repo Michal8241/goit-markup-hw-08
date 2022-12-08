@@ -1,0 +1,31 @@
+.social-navigation-res {
+    position: absolute;
+    top: 85vh;
+    left: 0;
+    background-color: $main-white;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 100;
+
+    &>.social-navigation-res__element {
+        padding: 0 10px;
+        border-right: 1px solid $border-x;
+        &>.social-navigation-res__element__link {
+            color: $main-blue;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        &:last-child {
+            border-right: none;
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}

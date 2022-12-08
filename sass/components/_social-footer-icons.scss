@@ -1,0 +1,31 @@
+.social-footer-icons {
+    margin-top: 24px;
+    display: flex;
+
+    &>.social-footer-icons__link {
+        margin-right: 8px;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        fill: $main-white;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: $icon-bacground;
+
+        &:hover {
+            background-color: $main-blue;
+            transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+     }
+
+}
+
+@media (min-width: $break-point-min) and (max-width: $break-point-tel) {
+    .social-footer-icons {
+        justify-content: center;
+    }
+}
